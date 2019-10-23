@@ -1,0 +1,4 @@
+s0001#Garry#Staff#4500000
+s0002#James#Staff#5000000
+s0004#Judith#Manager#10700000
+s0003#Yuli#Officer#8500000

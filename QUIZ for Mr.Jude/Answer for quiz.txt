@@ -1,0 +1,27 @@
+a. What are the parent and child classes here?
+b. What does the code print out? (Try figuring it out without running it in Python)
+c. Which get description method is called when ‘study spell(Confundo())’ is executed? Why?
+d. What do we need to do so that ‘print Accio()’ will print the appropriate description (‘This charm summons
+an object to the caster, potentially over a significant distance’)?
+Write down the code that we need to add and/or change.
+
+
+a. the parent class is "Spell" and the child class is "Accio" and "Confundo"
+
+b.Accio
+  Summoning CharmAccio 
+  No description
+  Confundus CharmConfundo
+  Causes the victim to become confused and befuddled
+
+c.The getDescription method defined within the Spell class,Accio class, and Confundo class
+
+d.add another function code below called getDescription(self) 
+  class Accio(Spell):
+      def __init__(self):
+          return Spell.__init__(self, "Accio", "Summoning Charm")
+
+  The code we need to add is :
+ 
+      def getDescription(self):
+          return "This charm summons an object to the caster, potentially over a significant distance."
